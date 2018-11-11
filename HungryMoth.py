@@ -8,8 +8,9 @@ comments = subreddit.stream.comments()
 for comment in comments:
     text = comment.body # Fetch body
     author = comment.author # Fetch author
-    if 'Moth' or 'moth' in text.lower():
+    if ' lamp ' in text.lower():
         # Generate a message
-        message = "https://imgur.com/gallery/pJVKB2f" 
+        message = "https://imgur.com/gallery/pJVKB2f I am hungry." 
 
         comment.reply(message) # Send message
+	time.sleep(1)
