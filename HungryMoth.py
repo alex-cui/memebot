@@ -12,7 +12,7 @@ comments = subreddit.stream.comments()
 for comment in comments:
     text = comment.body # Fetch body
     author = comment.author # Fetch author
-    if ' lamp ' in text.lower() and comment.author.name != "HungryMothWantsLamp":
+    if ' lamp ' in text.lower() and comment.author != "HungryMothWantsLamp":
         # Generate a message
         message = "https://imgur.com/gallery/pJVKB2f I am hungry." 
 
