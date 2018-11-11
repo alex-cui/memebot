@@ -10,6 +10,6 @@ for comment in comments:
     author = comment.author # Fetch author
     if 'Moth' or 'moth' in text.lower():
         # Generate a message
-        message = "".format(author) 
+        message = "https://imgur.com/gallery/pJVKB2f" 
 
         comment.reply(message) # Send message
