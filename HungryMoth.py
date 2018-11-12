@@ -30,7 +30,13 @@ shrekDonkey.addTerm(" onions ")
 shrekDonkey.addTerm(" layers ")
 shrekDonkey.addTerm(" parfait ")
 
-Memes = [lampMoth, shrekDonkey]
+pikachuWow = Meme([], "https://www.dailydot.com/wp-content/uploads/2018/10/surprisedpikachu.jpg", "Pikachu/Wow")
+pikachuWow.addTerm(" wow ")
+pikachuWow.addTerm(" pikachu ")
+pikachuWow.addTerm(" ash ")
+pikachuWow.addTerm(" ketchup ")
+
+Memes = [lampMoth, shrekDonkey, pikachuWow]
 
 bot = praw.Reddit(user_agent='HungryMothBot',
                   client_id='Lf1RYS-DToojdQ', 
