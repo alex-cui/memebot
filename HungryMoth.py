@@ -27,7 +27,7 @@ lampMoth.addTerm(" glowing ")
 
 shrekDonkey = Meme([], "https://66.media.tumblr.com/1e2f561f44d85b1219fd4008ea843578/tumblr_mvc7jbak6Q1sm2yoxo4_250.gif", "Shrek/Donkey")
 #shrekDonkey.setResponse("https://66.media.tumblr.com/1e2f561f44d85b1219fd4008ea843578/tumblr_mvc7jbak6Q1sm2yoxo4_250.gif")
-shrekDonkey.addTerm(" ogres ")
+shrekDonkey.addTerm(" it ")
 shrekDonkey.addTerm(" onions ")
 shrekDonkey.addTerm(" layers ")
 shrekDonkey.addTerm(" parfait ")
@@ -35,9 +35,9 @@ shrekDonkey.addTerm(" parfait ")
 Memes = [lampMoth, shrekDonkey]
 
 
-bot = praw.Reddit(user_agent='HungryMothBot',client_id='Lf1RYS-DToojdQ', client_secret='beINITOxMTltT3hZQubyIS-aclY',username='HungryMothWantsLamp', password='GiveMeThatLamp')
+bot = praw.Reddit(user_agent='Reddit MemeBot by u/HungryMothWantsLamp',client_id='Lf1RYS-DToojdQ', client_secret='beINITOxMTltT3hZQubyIS-aclY',username='HungryMothWantsLamp', password='GiveMeThatLamp')
 
-subreddit = bot.subreddit('popular')
+subreddit = bot.subreddit('all')
 
 comments = subreddit.stream.comments()
 
@@ -60,6 +60,7 @@ for comment in comments:
     for key in Memes[desired_meme_num].terms: 
 	if key in text.lower():
            #comment.reply(Memes[desired_meme_num].respond()) # Send message
+	    print(text)   
 	    time.sleep(1)
     else:
     	print("Nope!")
