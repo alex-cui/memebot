@@ -54,7 +54,7 @@ desired_meme_num = -1
 while(not moveOn):
     print("\nMeme List:")
     for x in Memes:
-        print("    " + x.name)
+        print("    (" + str(Memes.index(x)) + ") " + x.name)
         
     print("\nWhat number meme do you want to auto-reply to?")
     desired_meme_num = int(input())
